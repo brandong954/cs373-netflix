@@ -12,7 +12,7 @@
 
 from io       import StringIO
 from unittest import main, TestCase
-from Netflix import probe_filename, open_file
+from Netflix import probe_filename, open_file, get_movie_filename
 
 # -----------
 # TestNetflix
@@ -25,7 +25,11 @@ class TestNetflix (TestCase) :
 		f = open_file(filename)
 		self.assertNotEqual(f, None)
 		
-
+	def test_get_movie_filename(self) :
+		movie_filename = get_movie_filename('1:')
+		self.assertEqual(movie_filename, 'mv_0000001.txt')
+				
+				
 	
 # ----
 # main
