@@ -29,6 +29,8 @@ class TestNetflix (TestCase) :
 		movie_filename = get_movie_filename('1:')
 		self.assertEqual(movie_filename, 'mv_0000001.txt')
 				
+	def test_get_movie_rating_list(self) :
+		average
 				
 	
 # ----
