@@ -10,6 +10,8 @@ from json import load
 from numpy import mean, sqrt, square, subtract
 
 average_movie_rating_cache = None
+average_user_rating_cache = None
+
 
 # ------------
 # netflix_calculate_RMSE
@@ -60,9 +62,11 @@ def netflix_solve (r, w) :
     r a reader
     w a writer
     """
-    print("loading cache")
+    print("loading caches")
     with open('./Average_Movie_Rating_Cache.json') as data_file:    
         average_movie_rating_cache = load(data_file)
+    # with open('./Average_User_Rating_Cache.json') as data_file:    
+        # average_user_rating_cache = load(data_file)
     
     print("done loading caches")
 
