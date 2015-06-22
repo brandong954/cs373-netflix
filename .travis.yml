@@ -15,8 +15,9 @@ before_install:
 install:
     - pip install --upgrade pip
     - pip install coverage
-    - pip install numpy
-    - pip install --upgrade numpy
+    - sudo apt-get install python3-pip
+    - pip3 install numpy
+    - pip3 install --upgrade numpy
 
 before_script:
     - uname -a
