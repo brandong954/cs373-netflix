@@ -12,13 +12,19 @@
 
 from io       import StringIO
 from unittest import main, TestCase
-from Netflix import netflix_eval, netflix_solve
+from Netflix import netflix_print, netflix_eval, netflix_solve
 
 # -----------
 # TestNetflix
 # -----------
 
 class TestNetflix (TestCase) :
+
+    def test_netflix_print(self) :
+        w = StringIO("")
+        i = "1"
+        netflix_print(w, i)
+        self.assertEqual(w.getvalue(), "1\n")
 
     def test_netflix_eval(self) :
         movie_id = "1"

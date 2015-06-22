@@ -31,13 +31,6 @@ def netflix_calculate_RMSE (list1, list2) :
     """
     return sqrt(mean(square(subtract(list1, list2))))
 
-# ------------
-# netflix_read
-# ------------
-
-def netflix_read (s) :
-    """
-    """
 
 # ------------
 # netflix_eval
@@ -49,6 +42,7 @@ def netflix_eval (movie_id, user_id) :
     x = round(average_movie_rating_cache[movie_id], 1)
     return x  
 
+
 # -------------
 # netflix_print
 # -------------
@@ -59,6 +53,7 @@ def netflix_print (w, i) :
     i either the movie_id or prediction
     """
     w.write(str(i) + "\n")
+
 
 # -------------
 # netflix_solve
