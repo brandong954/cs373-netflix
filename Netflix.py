@@ -6,11 +6,13 @@
 # imports
 # ------------
 
-from json import load
+import json
+import code
 from numpy import mean, sqrt, square, subtract
 
-average_movie_rating_cache = None
-average_user_rating_cache = None
+# average_movie_rating_cache = None
+# average_user_rating_cache = None
+# average_user_rating_cache = None
 
 
 # ------------
@@ -64,10 +66,13 @@ def netflix_solve (r, w) :
     """
     print("loading caches")
     with open('./Average_Movie_Rating_Cache.json') as data_file:    
-        average_movie_rating_cache = load(data_file)
-    # with open('./Average_User_Rating_Cache.json') as data_file:    
-        # average_user_rating_cache = load(data_file)
+        average_movie_rating_cache = json.load(data_file)
+
+    with open('./ezo55-Average_Viewer_Rating_Cache.json') as data_file:    
+        average_user_rating_cache = json.load(data_file)
     
+    # code.interact(local=locals())
+
     print("done loading caches")
 
     movie_id = None
