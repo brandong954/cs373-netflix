@@ -7,8 +7,21 @@
 # ------------
 
 from json import load
+from numpy import mean, sqrt, square, subtract
 
 average_movie_rating_cache = None
+
+# ------------
+# netflix_calculate_RMSE
+# ------------
+def netflix_calculate_RMSE (list1, list2) :
+    """
+    calculates RMSE from two lists
+    list1 is first list
+    list2 is second list
+    returns RMSE
+    """
+    return sqrt(mean(square(subtract(list1, list2))))
 
 # ------------
 # netflix_read
@@ -62,4 +75,6 @@ def netflix_solve (r, w) :
             user_id = s
             user_prediction = netflix_eval(movie_id, user_id) 
             netflix_print(w, user_prediction)
+
+
 
