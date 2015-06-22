@@ -35,8 +35,8 @@ script:
     - ls -al
     - make Netflix.html
     - ls -al
-   # - make test
-   # - ls -al
-   # - make check
+    - make test
+    - ls -al
+    - make check
 
 
