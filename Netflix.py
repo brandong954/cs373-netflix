@@ -8,7 +8,8 @@
 
 import json
 import code
-from numpy import mean, sqrt, square, subtract
+from math import sqrt
+#from numpy import mean, sqrt, square, subtract
 
 average_movie_rating_cache = None
 average_user_rating_cache = None
@@ -22,15 +23,18 @@ with open('./ezo55-Average_Viewer_Rating_Cache.json') as data_file:
 # ------------
 # netflix_calculate_RMSE
 # ------------
-def netflix_calculate_RMSE (list1, list2) :
+def netflix_calculate_RMSE (a, p) :
     """
-    calculates RMSE from two lists
-    list1 is first list
-    list2 is second list
-    returns RMSE
+    O(1) in space
+    O(n) in time
     """
-    return sqrt(mean(square(subtract(list1, list2))))
-
+    assert hasattr(a, "__len__")
+    assert hasattr(p, "__len__")
+    assert hasattr(a, "__iter__")
+    assert hasattr(p, "__iter__")
+    z = zip(a, p)
+    v = sum((x - y) ** 2 for x, y in z)
+    return sqrt(v / len(a))
 
 # ------------
 # netflix_eval
@@ -77,5 +81,6 @@ def netflix_solve (r, w) :
             user_id = s
             user_prediction = netflix_eval(movie_id, user_id) 
             netflix_print(w, user_prediction)
+    print("RMSE: " + str(netflix_calculate_RMSE([1,1,1],[2,2,2])))     
 
 
