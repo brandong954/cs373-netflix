@@ -78,8 +78,8 @@ def netflix_solve (r, w) :
     movie_id = None
     for s in r :
         if ':' in s :
-            movie_id = s[0:len(s)-1]
-            netflix_print(w, s)
+            movie_id = s[:-2]
+            netflix_print(w, movie_id + ":")
         else :
             user_id = s
             user_prediction = netflix_eval(movie_id, user_id) 
