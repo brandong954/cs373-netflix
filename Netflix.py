@@ -44,6 +44,16 @@ def netflix_eval (movie_id, user_id) :
     """
     return 1   
 
+# -------------
+# netflix_print
+# -------------
+
+def netflix_print (w, i) :
+    """
+    w a writer
+    i either the movie_id or prediction
+    """
+    w.write(str(i) + "\n")
 
 # -------------
 # netflix_solve
@@ -69,10 +79,10 @@ def netflix_solve (r, w) :
     for s in r :
         if ':' in s :
             movie_id = s[0:len(s)-1]
-            w.write(str(s) + ":\n")
+            netflix_print(w, s)
         else :
             user_id = s
             user_prediction = netflix_eval(movie_id, user_id) 
-            w.write(str(user_prediction) + "\n")
+            netflix_print(w, user_prediction)
 
 
