@@ -28,7 +28,6 @@ def get_movie_rating_average(movie_file) :
 		movie_rating_list += [rating]
 	return sum(movie_rating_list) / len(movie_rating_list)	
 
-
 def create_caches() :
 	movie_id_limit = 17770
 	movie_average_dic = {}
