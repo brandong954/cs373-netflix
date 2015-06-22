@@ -12,7 +12,7 @@
 
 from io       import StringIO
 from unittest import main, TestCase
-from Netflix import probe_filename, open_file, get_movie_filename
+from Netflix import netflix_eval, netflix_solve
 
 # -----------
 # TestNetflix
@@ -20,18 +20,17 @@ from Netflix import probe_filename, open_file, get_movie_filename
 
 class TestNetflix (TestCase) :
 
-	def test_open_file (self) :
-		filename = probe_filename
-		f = open_file(filename)
-		self.assertNotEqual(f, None)
-		
-	def test_get_movie_filename(self) :
-		movie_filename = get_movie_filename('1:')
-		self.assertEqual(movie_filename, 'mv_0000001.txt')
-				
-	def test_get_movie_rating_list(self) :
-		average
-				
+    def test_netflix_eval(self) :
+        movie_id = 1
+        user_id = 30878
+        user_prediction = netflix_eval(movie_id, user_id)
+        self.assertEqual(user_prediction, 3.7)
+
+    def test_netflix_solve(self) :
+        r = StringIO("1:\n30878\n2647871\n1283744\n")
+        w = StringIO("")
+        netflix_solve(r, w)
+        self.assertEqual(w.getvalue(), "1:\n3.7\n3.7\n3.7\n")
 	
 # ----
 # main
