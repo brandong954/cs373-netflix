@@ -21,8 +21,8 @@ from Netflix import netflix_eval, netflix_solve
 class TestNetflix (TestCase) :
 
     def test_netflix_eval(self) :
-        movie_id = 1
-        user_id = 30878
+        movie_id = "1"
+        user_id = "30878"
         user_prediction = netflix_eval(movie_id, user_id)
         self.assertEqual(user_prediction, 3.7)
 
