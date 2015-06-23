@@ -93,6 +93,6 @@ def netflix_solve (r, w) :
             prediction_list += [user_prediction]
             netflix_print(w, user_prediction)
 
-    print("RMSE: " + str(netflix_calculate_RMSE(answer_list, prediction_list)))     
+    print("RMSE: " + str(round(netflix_calculate_RMSE(answer_list, prediction_list), 2)))     
 
 
