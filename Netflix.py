@@ -49,8 +49,6 @@ def netflix_calculate_RMSE (a, p) :
     z = zip(a, p)
     v = sum((x - y) ** 2 for x, y in z)
     x = sqrt(v / len(a))
-    assert(v > 0)
-    assert(x > 0)
     return x
 
 
@@ -84,7 +82,6 @@ def netflix_print (w, i) :
     writes out the prediction to w
     """
     assert hasattr(w, "write")
-    assert type(i) is float or int
     w.write(str(i) + "\n")
 
 
