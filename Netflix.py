@@ -48,7 +48,11 @@ def netflix_calculate_RMSE (a, p) :
     assert hasattr(p, "__iter__")
     z = zip(a, p)
     v = sum((x - y) ** 2 for x, y in z)
-    return sqrt(v / len(a))
+    x = sqrt(v / len(a))
+    assert(v > 0)
+    assert(x > 0)
+    return x
+
 
 # ------------
 # netflix_eval
@@ -79,6 +83,8 @@ def netflix_print (w, i) :
     i either the movie_id or prediction
     writes out the prediction to w
     """
+    assert hasattr(w, "write")
+    assert type(i) is float or int
     w.write(str(i) + "\n")
 
 
@@ -92,6 +98,10 @@ def netflix_solve (r, w) :
     w a writer
     produces a prediction result
     """
+
+    assert hasattr(r, "read")
+    assert hasattr(w, "write")
+
     # list of actual rating
     answer_list = []
 
