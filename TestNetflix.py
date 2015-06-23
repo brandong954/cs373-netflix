@@ -54,7 +54,7 @@ class TestNetflix (TestCase) :
         r = StringIO("1:\n30878\n2647871\n1283744\n")
         w = StringIO("")
         netflix_solve(r, w)
-        self.assertEqual(w.getvalue(), "1:\n3.7\n3.7\n3.7\n")
+        self.assertEqual(w.getvalue(), "1:\n3.7\n3.5\n3.6\n")
 	
 # ----
 # main
