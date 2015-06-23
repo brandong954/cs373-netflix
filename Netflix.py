@@ -32,6 +32,8 @@ def netflix_calculate_RMSE (a, p) :
     O(1) in space
     O(n) in time
     """
+    assert len(a) > 0
+    assert len(a) == len(p)
     assert hasattr(a, "__len__")
     assert hasattr(p, "__len__")
     assert hasattr(a, "__iter__")
@@ -48,9 +50,15 @@ def netflix_eval (movie_id, user_id) :
     """
     returns a prediction of the user's rating
     """
+    assert type(movie_id) is str
+    assert type(user_id) is str
     x = average_movie_rating_cache[movie_id]
     y = average_user_rating_cache[user_id]
+    assert x > 0
+    assert y > 0
     # z = round((x+y)/2, 1)
+    # assert 1 <= z
+    # assert z <= 5
     z = 0.940 * (x + y) - 2.870
     return 1.0 if (z < 1.0) else 5.0 if (z > 5.0) else z
     # return z if (z >= 1.0 and z <= 5.0) else 1.0 if (z < 1.0) else 5.0
