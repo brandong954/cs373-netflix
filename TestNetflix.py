@@ -20,6 +20,10 @@ from Netflix import netflix_print, netflix_eval, netflix_solve, netflix_calculat
 
 class TestNetflix (TestCase) :
 
+    # -----------
+    # tests for netflix_calculate_RMSE()
+    # -----------
+
     def test_netflix_calculate_RMSE_1(self) :
         list_1 = [1, 1, 1]
         list_2 = [2, 2, 2]
@@ -38,17 +42,41 @@ class TestNetflix (TestCase) :
         RMSE_value = netflix_calculate_RMSE(list_1, list_2)
         self.assertEqual(RMSE_value, 456)    
         
+    # -----------
+    # tests for netflix_print()
+    # -----------
+
     def test_netflix_print_1(self) :
         w = StringIO("")
         i = "1"
         netflix_print(w, i)
         self.assertEqual(w.getvalue(), "1\n")
 
+    def test_netflix_print_2(self) :
+        w = StringIO("")
+        i = ""
+        netflix_print(w, i)
+        self.assertEqual(w.getvalue(), "\n")
+
+    def test_netflix_print_3(self) :
+        w = StringIO("")
+        i = "-1"
+        netflix_print(w, i)
+        self.assertEqual(w.getvalue(), "-1\n")
+
+    # -----------
+    # tests for netflix_eval()
+    # -----------
+
     def test_netflix_eval_1(self) :
         movie_id = "1"
         user_id = "30878"
         user_prediction = netflix_eval(movie_id, user_id)
         self.assertEqual(user_prediction, 3.7)
+
+    # -----------
+    # tests for netflix_solve()
+    # -----------
 
     def test_netflix_solve_1(self) :
         r = StringIO("1:\n30878\n2647871\n1283744\n")
