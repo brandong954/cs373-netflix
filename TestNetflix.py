@@ -100,13 +100,13 @@ class TestNetflix (TestCase) :
         r = StringIO("10378:\n1531647\n764281\n316297\n")
         w = StringIO("")
         netflix_solve(r, w)
-        self.assertEqual(w.getvalue(), "1:\n4.6\n3.4\n4.4\n")
+        self.assertEqual(w.getvalue(), "10378:\n4.6\n3.4\n4.4\n")
 
     def test_netflix_solve_3(self) :
         r = StringIO("10379:\n1993470\n2346092\n541477\n")
         w = StringIO("")
         netflix_solve(r, w)
-        self.assertEqual(w.getvalue(), "1:\n4.4\n3.7\n3.8\n")
+        self.assertEqual(w.getvalue(), "10379:\n4.4\n3.7\n3.8\n")
 	
 # ----
 # main
