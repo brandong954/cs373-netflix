@@ -12,13 +12,19 @@
 
 from io       import StringIO
 from unittest import main, TestCase
-from Netflix import netflix_print, netflix_eval, netflix_solve
+from Netflix import netflix_print, netflix_eval, netflix_solve, netflix_calculate_RMSE
 
 # -----------
 # TestNetflix
 # -----------
 
 class TestNetflix (TestCase) :
+
+    def test_netflix_calculate_RMSE(self) :
+        list_1 = [1, 1, 1]
+        list_2 = [2, 2, 2]
+        RMSE_value = netflix_calculate_RMSE(list_1, list_2)
+        self.assertEqual(RMSE_value, 1)    
 
     def test_netflix_print(self) :
         w = StringIO("")
