@@ -61,12 +61,8 @@ def netflix_eval (movie_id, user_id) :
     y = average_viewer_rating_cache[user_id]
     assert x > 0
     assert y > 0
-    # z = round((x+y)/2, 1)
-    # assert 1 <= z
-    # assert z <= 5
     z = 0.940 * (x + y) - 2.870
     return 1.0 if (z < 1.0) else 5.0 if (z > 5.0) else z
-    # return z if (z >= 1.0 and z <= 5.0) else 1.0 if (z < 1.0) else 5.0
 
 # -------------
 # netflix_print
@@ -89,10 +85,11 @@ def netflix_solve (r, w) :
     r a reader
     w a writer
     """
+    # list of actual rating
     answer_list = []
-    prediction_list = []
-    # code.interact(local=locals())
 
+    # list of our generated predictions
+    prediction_list = []
 
     movie_id = None
     for s in r :
