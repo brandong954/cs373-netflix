@@ -50,10 +50,10 @@ def netflix_eval (movie_id, user_id) :
     """
     x = average_movie_rating_cache[movie_id]
     y = average_user_rating_cache[user_id]
-    z = round((x+y)/2, 1)
-    return z
-    # return round(average_movie_rating_cache[movie_id], 1)
-
+    # z = round((x+y)/2, 1)
+    z = 0.940 * (x + y) - 2.870
+    return 1.0 if (z < 1.0) else 5.0 if (z > 5.0) else z
+    # return z if (z >= 1.0 and z <= 5.0) else 1.0 if (z < 1.0) else 5.0
 
 # -------------
 # netflix_print
