@@ -52,7 +52,7 @@ def netflix_eval (movie_id, user_id) :
     y = average_user_rating_cache[user_id]
     z = round((x+y)/2, 1)
     return z
-    return round(average_movie_rating_cache[movie_id], 1)
+    # return round(average_movie_rating_cache[movie_id], 1)
 
 
 # -------------
