@@ -26,6 +26,18 @@ class TestNetflix (TestCase) :
         RMSE_value = netflix_calculate_RMSE(list_1, list_2)
         self.assertEqual(RMSE_value, 1)    
 
+    def test_netflix_calculate_RMSE_2(self) :
+        list_1 = [0, 0, 0]
+        list_2 = [0, 0, 0]
+        RMSE_value = netflix_calculate_RMSE(list_1, list_2)
+        self.assertEqual(RMSE_value, 0)    
+        
+    def test_netflix_calculate_RMSE_3(self) :
+        list_1 = [1999]
+        list_2 = [2455]
+        RMSE_value = netflix_calculate_RMSE(list_1, list_2)
+        self.assertEqual(RMSE_value, 456)    
+        
     def test_netflix_print_1(self) :
         w = StringIO("")
         i = "1"
