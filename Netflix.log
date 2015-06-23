@@ -1,0 +1,336 @@
+commit e1c5335225a60103cfd9e07e0683d5123bef928c
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jun 23 18:10:24 2015 -0500
+
+    fixed tests
+
+commit ef9d34eef66e79e8d666bb74ca20ec93b171e314
+Author: lazercorn@github.com/cs378-summer-2015/collatz-tests <perry_feng@utexas.edu>
+Date:   Tue Jun 23 18:19:03 2015 -0500
+
+    added netflix_eval and netflix_solve tests
+
+commit 235e3f615f8b3ffcfff79821e35d0ed941f8c3f2
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 14:41:03 2015 -0500
+
+    removing temp files
+
+commit 88f70cdda34dab15ca32135c86c6589974cf049b
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 14:40:41 2015 -0500
+
+    cleaning up directory
+
+commit 32e9af3820db94d0d905822a994422b2179f695e
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 14:28:35 2015 -0500
+
+    cleaning up and making comments
+
+commit a3448cd46b85403e3f2570ea8b3d5cc469801db4
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 13:54:16 2015 -0500
+
+    removing temp files
+
+commit a95dcd901f1f78b62e191962bd8ec24a9f7a88bd
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 13:29:43 2015 -0500
+
+    removed local test files
+
+commit d1c658eadb687342c7519dc8b4e6218b2a942f1b
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 13:28:23 2015 -0500
+
+    resolved #38
+
+commit 9dc0b497b8c657d5a5c87323af1bd84e23ed225a
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 12:05:22 2015 -0500
+
+    added assertions for pre and post conditions
+
+commit 02f5d1d46f85a089ed3b2ed65da013c2efa30d1e
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 11:19:25 2015 -0500
+
+    rounding rmse values to two decimal places
+
+commit 0aecaee57e6ced1de93b56a8143546d006618b72
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 11:14:25 2015 -0500
+
+    added remaining tests for print
+
+commit 78ef0191dd7f2d70a29f6c25b1cbc1ad0bead9ae
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 10:45:27 2015 -0500
+
+    resolved #9
+
+commit 2c39af374fe1eca6057334d66da45665cd4ffba8
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 10:20:04 2015 -0500
+
+    removing temp files
+
+commit ec978f7cc75bef0651d5c852e1dff44da10ba14d
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jun 22 22:41:12 2015 -0500
+
+    edited netflix_eval
+
+commit 0844da8db4b627177def77592bb5983dfe150de0
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jun 22 21:52:00 2015 -0500
+
+    removed #
+
+commit 3c8f47f03acded6e9073ac4f99b383c6cb71125e
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jun 22 21:25:56 2015 -0500
+
+    implemented naive implementation.
+
+commit 2848d832b4a19ed2601edd0ca7493be7fe716102
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 20:59:29 2015 -0500
+
+    more RMSE tests
+
+commit eb04107c055b01a6ddd74fd3e7279f4f181a8f13
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 20:45:38 2015 -0500
+
+    updating test names
+
+commit fd160deca2d33e96665f47f71ca35044898482af
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 20:36:46 2015 -0500
+
+    cleaning up temp files
+
+commit 925399558ec6b2da6d9b9299f419ee1360269d12
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 20:35:03 2015 -0500
+
+    adding sample RunNetflix.out
+
+commit f70be93b7ce8e5b335b9d64ee3f3ed70d7b5fcca
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 20:27:56 2015 -0500
+
+    added RMSE calculate test
+
+commit 6def59b7c6534f9c0b122d005932dc1693c20937
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 20:20:57 2015 -0500
+
+    little refactoring
+
+commit 233ecb1271cc38cabe85e77603c5986e94f3e9b7
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 18:22:49 2015 -0500
+
+    fixed rmse
+
+commit eb78d50cbb2e4c192d588ccc45ca53a5449dc81f
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 18:10:47 2015 -0500
+
+    reverted travis file
+
+commit 4e70e8f36360fde79269c774d2057cac7edc0816
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 18:04:20 2015 -0500
+
+    travis update
+
+commit e33c690311b1bf5a830b5dc627e49c7fc37d8c12
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:55:31 2015 -0500
+
+    travis update
+
+commit 52d5d6804d03957371848c55cf25f44d715e03e8
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:41:50 2015 -0500
+
+    updating travis
+
+commit 500488b6e0e3b2a5fe637397443aef83a2c7e36b
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:30:58 2015 -0500
+
+    yml file edited
+
+commit 4af32609fdd350273632329874871e547f56de66
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:28:17 2015 -0500
+
+    edited yml file
+
+commit e15b9cb1a83af5fcc463187fd74580acf3a62a3c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:25:29 2015 -0500
+
+    edited travis.yml
+
+commit c1f38e3d398c4ea32e25ae7c3eb602ca8a29ce8c
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:09:12 2015 -0500
+
+    uncommented travis.yml
+
+commit 4827affdfeaaafe717a13be970249bf3c002e04a
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:07:35 2015 -0500
+
+    updated .travis.yml file
+
+commit 594e4ffdc077aab50de01b27d5c8cd61da98e980
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 17:01:28 2015 -0500
+
+    resolved #34
+
+commit d9679ca6b01d174e6d02b1034e8078a79142d224
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 15:42:27 2015 -0500
+
+    added netflix_print test
+
+commit dd93f6697a4d6e3496b23cfba3746f94890e593d
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 15:35:59 2015 -0500
+
+    resolved #33
+
+commit 83246cb00fcceca6393ad9162a9014411535ede1
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 15:05:23 2015 -0500
+
+    resolved #32
+
+commit a60a6d9426319ad2829840ce3276a492f43f89fb
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 11:28:56 2015 -0500
+
+    un-erased netflix_print()
+
+commit 1a415174fe04715402003656d1e5035b667cc486
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Mon Jun 22 11:23:08 2015 -0500
+
+    implemented solve and eval test and removed invalid tests
+
+commit ad65c08b758487cab2b32b89d876289926d7ff3f
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Mon Jun 22 00:02:29 2015 -0500
+
+    fixed ezo55 cache, corrupted on my machine
+
+commit 3d567b3cf6621346c851cc0b8edcd28342195e04
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 21:20:55 2015 -0500
+
+    added the average_movie_rating_cache file in. Loaded into json. appears json is broken. waiting for fix. commented out for the moment.
+
+commit aa12d2b9d7ff173e9932275f45866667ae7da1e2
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 20:59:29 2015 -0500
+
+    added netflix_calculate_RMSE_numpy method and made sure it worked.
+
+commit 36b440e367c93e4946db7e5a86382e151487b0c6
+Merge: 9de5874 f626e28
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 20:42:31 2015 -0500
+
+    Merge branch 'dev' of https://github.com/brandong954/cs373-netflix into dev
+
+commit 9de5874cc3bd8bd1730c076310380ab030e1ed59
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 20:36:09 2015 -0500
+
+    json file not loading correctly changed to load. fixes #16
+
+commit f626e286e8d9fa0e6f33a747cfc41080bced0d5a
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 20:36:09 2015 -0500
+
+    json file not loading correctly changed to load.
+
+commit 5b116119b1c84ad678bc25c84ae23d0bd52f6365
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 20:35:34 2015 -0500
+
+    get movie_file function not working fixed. reorganized function. extracted : out and passed it just a number. fixes #17
+
+commit 59745b95716c92d7f18ee5b547cb4074403bef8d
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 20:33:35 2015 -0500
+
+    missing file average_movie_rating_cache fixed by adding a +w as one of parameters. created file if missing. fixes  #18
+
+commit ee4ce2e85bc06a24a3cc189269b6ab1bc6fbd88c
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Sun Jun 21 20:32:57 2015 -0500
+
+    wrong directory string path. fixed it to correct one in downing's directory path. fixes #19
+
+commit 5dfbbd6d4bb0ca771d2b078e36ae723d40f90e6f
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jun 20 18:23:42 2015 -0500
+
+    resolved #15
+
+commit 3de0a825b56b0dec55a1880296e907082f80a591
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jun 20 16:35:25 2015 -0500
+
+    created Average movie rating cache generator
+
+commit fac2ba0265175466b49d0ada23ef9b503397adec
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Sat Jun 20 15:35:46 2015 -0500
+
+    iterating movie files in movies directory
+
+commit a70513bd6133d593463d094009fc5d7aab868c37
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jun 19 17:43:47 2015 -0500
+
+    remove tempfiles added gitignore
+
+commit 007125d27a7c41484f31a16d685d432758ac6a04
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jun 19 17:38:12 2015 -0500
+
+    added get_movie_filename test
+
+commit 8cc8a3ef59350e485e0136900bc8c446ba37aadd
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jun 19 17:04:24 2015 -0500
+
+    added open_file test
+
+commit c34c3ce9c1e04960cac7f9d22d9374d6dbdcb505
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jun 19 15:23:36 2015 -0500
+
+    travis yml
+
+commit 1cac798b149537dc856979da958b48ff5f9e6e25
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jun 19 15:13:14 2015 -0500
+
+    removed test file
+
+commit bc7cf3b3147a480f06983c4007c8739ec93b9402
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Fri Jun 19 15:12:37 2015 -0500
+
+    testing
