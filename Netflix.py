@@ -36,6 +36,9 @@ def netflix_calculate_RMSE (a, p) :
     """
     O(1) in space
     O(n) in time
+    a is list 1
+    b is list 2 
+    returns RMSE calculated using the two lists
     """
     assert len(a) > 0
     assert len(a) == len(p)
@@ -53,6 +56,8 @@ def netflix_calculate_RMSE (a, p) :
 
 def netflix_eval (movie_id, user_id) :
     """
+    movie_id is a string
+    user_id is a string
     returns a prediction of the user's rating
     """
     assert type(movie_id) is str
@@ -61,7 +66,7 @@ def netflix_eval (movie_id, user_id) :
     y = average_viewer_rating_cache[user_id]
     assert x > 0
     assert y > 0
-    z = 0.940 * (x + y) - 2.870
+    z = round((0.91 * (x + y) - 2.88), 1)
     return 1.0 if (z < 1.0) else 5.0 if (z > 5.0) else z
 
 # -------------
@@ -72,6 +77,7 @@ def netflix_print (w, i) :
     """
     w a writer
     i either the movie_id or prediction
+    writes out the prediction to w
     """
     w.write(str(i) + "\n")
 
@@ -84,6 +90,7 @@ def netflix_solve (r, w) :
     """
     r a reader
     w a writer
+    produces a prediction result
     """
     # list of actual rating
     answer_list = []
