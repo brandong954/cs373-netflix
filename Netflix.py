@@ -43,8 +43,7 @@ def netflix_calculate_RMSE (a, p) :
 def netflix_eval (movie_id, user_id) :
     """
     """
-    x = round(average_movie_rating_cache[movie_id], 1)
-    return x  
+    return round(average_movie_rating_cache[movie_id], 1)
 
 
 # -------------
