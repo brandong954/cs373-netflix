@@ -80,6 +80,5 @@ def netflix_solve (r, w) :
             user_id = s
             user_prediction = netflix_eval(movie_id, user_id) 
             netflix_print(w, user_prediction)
-    print("RMSE: " + str(netflix_calculate_RMSE([1,1,1],[2,2,2])))     
 
 
