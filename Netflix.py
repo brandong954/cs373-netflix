@@ -8,21 +8,26 @@
 
 import json
 import code
+from urllib.request import urlopen
 from math import sqrt
 #from numpy import mean, sqrt, square, subtract
 
-average_movie_rating_cache = None
-average_user_rating_cache = None
-probe_answers = None
+# ------------
+# Load Caches from URLs
+# ------------
 
-with open('./Average_Movie_Rating_Cache.json') as data_file:    
-    average_movie_rating_cache = json.load(data_file)
+# Average Movie Rating Cache URL
+amrc_URL = urlopen("http://www.cs.utexas.edu/~ebanner/netflix-tests/BRG564-Average_Movie_Rating_Cache.json")
+average_movie_rating_cache = json.loads(amrc_URL.read().decode(amrc_URL.info().get_param('charset') or 'utf-8'))
 
-with open('./ezo55-Average_Viewer_Rating_Cache.json') as data_file:    
-    average_user_rating_cache = json.load(data_file)
+# Average Viewer Rating Cache URL
+avrc_URL = urlopen("http://www.cs.utexas.edu/~ebanner/netflix-tests/ezo55-Average_Viewer_Rating_Cache.json")
+average_viewer_rating_cache = json.loads(avrc_URL.read().decode(avrc_URL.info().get_param('charset') or 'utf-8'))
 
-with open('./pam2599-probe_solutions.json') as data_file:
-    probe_answers = json.load(data_file)
+# Probe Answers Cache URL
+pac_URL = urlopen("http://www.cs.utexas.edu/~ebanner/netflix-tests/pam2599-probe_solutions.json")
+probe_answers_cache = json.loads(pac_URL.read().decode(pac_URL.info().get_param('charset') or 'utf-8')) 
+
 
 # ------------
 # netflix_calculate_RMSE
@@ -53,7 +58,7 @@ def netflix_eval (movie_id, user_id) :
     assert type(movie_id) is str
     assert type(user_id) is str
     x = average_movie_rating_cache[movie_id]
-    y = average_user_rating_cache[user_id]
+    y = average_viewer_rating_cache[user_id]
     assert x > 0
     assert y > 0
     # z = round((x+y)/2, 1)
@@ -97,7 +102,7 @@ def netflix_solve (r, w) :
         else :
             user_id = s[:-1]
             user_prediction = netflix_eval(movie_id, user_id) 
-            answer_list += [probe_answers[movie_id][user_id]]
+            answer_list += [probe_answers_cache[movie_id][user_id]]
             prediction_list += [user_prediction]
             netflix_print(w, user_prediction)
 
