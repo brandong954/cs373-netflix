@@ -1,3 +1,27 @@
+commit 4c27a0db48782787f591ae760165a249aecad506
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 18:46:19 2015 -0500
+
+    removing temp files
+
+commit 15b78555e2e5a1bc74fb2e1499692a76ca97f524
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jun 23 18:42:02 2015 -0500
+
+    removed a few asserts
+
+commit f3fe59909f26f923014c161b9b4740801d2b673f
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jun 23 18:34:48 2015 -0500
+
+    added a few more asserts
+
+commit 946ac462b1efabfe517d1ee3066e71cd5a936662
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jun 23 18:20:22 2015 -0500
+
+    added Netflix.log, created Netflix.html, closes #11, closes #12, closes #28
+
 commit e1c5335225a60103cfd9e07e0683d5123bef928c
 Author: zerafenix <perry_feng@utexas.edu>
 Date:   Tue Jun 23 18:10:24 2015 -0500
