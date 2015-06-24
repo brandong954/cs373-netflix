@@ -111,7 +111,9 @@ def netflix_solve (r, w) :
             movie_id = s[:-2]
             netflix_print(w, movie_id + ":")
         else :
-            user_id = s[:-1]
+            user_id = s
+            if '\n' in user_id :
+                user_id = s[:-1]
             user_prediction = netflix_eval(movie_id, user_id) 
             answer_list += [probe_answers_cache[movie_id][user_id]]
             prediction_list += [user_prediction]
