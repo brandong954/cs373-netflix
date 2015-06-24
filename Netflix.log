@@ -1,3 +1,27 @@
+commit ef99e46d5db4272c25f1b60c45508a0741f39f66
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jun 23 22:07:35 2015 -0500
+
+    fixed crucial error in reading in files.
+
+commit 6ddd3c37f5a27ffaeb7131778535477d8882de39
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jun 23 19:16:27 2015 -0500
+
+    fixed .travis.yml
+
+commit 8fe24800ba24262a351ccb546ee6120e95a85f58
+Author: zerafenix <perry_feng@utexas.edu>
+Date:   Tue Jun 23 19:11:54 2015 -0500
+
+    edited makefile to be able to pull from public test repo
+
+commit cba84b0e1fa595dc3049991e06c46af210447537
+Author: Brandon Gottesman <brandon.gottesman@gmail.com>
+Date:   Tue Jun 23 18:50:22 2015 -0500
+
+    updating log for final push
+
 commit 4c27a0db48782787f591ae760165a249aecad506
 Author: Brandon Gottesman <brandon.gottesman@gmail.com>
 Date:   Tue Jun 23 18:46:19 2015 -0500
